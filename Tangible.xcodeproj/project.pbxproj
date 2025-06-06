@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6D83B6CA2DE0F75400504210 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6D83B6C92DE0F75400504210 /* .gitignore */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		6DC580992DDFC655002042B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,15 +31,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6D83B66F2DE0EF5400504210 /* Exceptions for "Source" folder in "Tangible" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Tangible/Assets.xcassets,
-				Tangible/ContentView.swift,
-				Tangible/TangibleApp.swift,
-			);
-			target = 6DC5808A2DDFC654002042B8 /* Tangible */;
-		};
 		6D83B6A32DE0F50D00504210 /* Exceptions for "Test" folder in "TangibleTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -59,10 +46,39 @@
 			);
 			target = 6DC580A12DDFC655002042B8 /* TangibleUITests */;
 		};
-		6D83B6A92DE0F68100504210 /* Exceptions for "Resources" folder in "Tangible" target */ = {
+		6DC7E26C2DF3693800790B6C /* Exceptions for "Source" folder in "Tangible" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				.gitkeep,
+				Tangible/Adapter/Controller/.gitkeep,
+				Tangible/Adapter/Presenter/.gitkeep,
+				Tangible/App/.gitkeep,
+				Tangible/Domain/Entity/.gitkeep,
+				Tangible/Domain/Features/Abstraction/.gitkeep,
+				Tangible/Domain/Features/AI/.gitkeep,
+				Tangible/Domain/Features/Canvas/.gitkeep,
+				Tangible/Domain/Features/Collaboration/.gitkeep,
+				Tangible/Domain/Features/Edge/.gitkeep,
+				Tangible/Domain/Features/Export/.gitkeep,
+				Tangible/Domain/Features/Gestures/.gitkeep,
+				Tangible/Domain/Features/Import/.gitkeep,
+				Tangible/Domain/Features/Input/.gitkeep,
+				Tangible/Domain/Features/Node/.gitkeep,
+				Tangible/Domain/Features/PDF/.gitkeep,
+				Tangible/Domain/Features/Selection/.gitkeep,
+				Tangible/Domain/Features/Sync/.gitkeep,
+				Tangible/Infrastructure/AI/.gitkeep,
+				Tangible/Infrastructure/API/.gitkeep,
+				Tangible/Infrastructure/DB/.gitkeep,
+				Tangible/Infrastructure/Sync/.gitkeep,
+				Tangible/UI/Animations/.gitkeep,
+				Tangible/UI/Controls/.gitkeep,
+				Tangible/UI/Layouts/.gitkeep,
+				Tangible/UI/ViewModels/.gitkeep,
+				Tangible/UI/Views/.gitkeep,
+				Tangible/UseCases/InputData/.gitkeep,
+				Tangible/UseCases/Interactor/.gitkeep,
+				Tangible/UseCases/OutputData/.gitkeep,
+				Tangible/Utility/.gitkeep,
 			);
 			target = 6DC5808A2DDFC654002042B8 /* Tangible */;
 		};
@@ -72,7 +88,7 @@
 		6D83B6662DE0EF4200504210 /* Source */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6D83B66F2DE0EF5400504210 /* Exceptions for "Source" folder in "Tangible" target */,
+				6DC7E26C2DF3693800790B6C /* Exceptions for "Source" folder in "Tangible" target */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -88,9 +104,6 @@
 		};
 		6D83B6A12DE0F26600504210 /* Resources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6D83B6A92DE0F68100504210 /* Exceptions for "Resources" folder in "Tangible" target */,
-			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -156,6 +169,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6D83B6662DE0EF4200504210 /* Source */,
 			);
 			name = Tangible;
 			packageProductDependencies = (
@@ -253,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D83B6CA2DE0F75400504210 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

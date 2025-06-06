@@ -1,2 +1,9 @@
 **/.gitkeep
+.DS_Store
+
+# Xcode temporary files and build products
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+build/
 
